@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Application</title>
+  <link rel="stylesheet" href="stile.css">
+</head>
+<body>
+  
+  <div class="container">
+    <h1>To-Do List</h1>
+    <div class="input-container">
+      <input type="text" id="taskInput" placeholder="Enter your task...">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <div>
+      <h2>Categories:</h2>
+      <select id="categoryFilter" onchange="filterTasksByCategory()">
+        <option value="all">All</option>
+        <!-- Add more categories here -->
+      </select>
+    </div>
+    <ul id="taskList">
+      <!-- Task items will be added dynamically here -->
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
